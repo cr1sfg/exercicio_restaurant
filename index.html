@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Dancing+Script:wght@400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="./main.css">
+    <title>Restaurant</title>
+</head>
+
+<body>
+    <div id="container"> <!-- Inicio container -->
+
+	<header> <!-- Inicio header -->
+		<div id="logo">
+			<h1>Restaurant</h1>
+		</div>
+
+	<nav> <!-- Inicio nav -->
+		<ul id="menu">
+			<li><a href="">Nossa história</a></li>
+			<li><a href="">Cardápio</a></li>
+			<li><a href="">Reservas</a></li>
+            <li><a href="">Horários</a></li>
+		</ul>
+	</nav> <!-- Fim nav -->
+	</header> <!-- Fim Header -->
+
+    <section id="container-flex"> <!-- Início principal -->
+			<div id="carousel-imagens">
+                <img src="./images/fachada.jpg">
+                <img src="./images/drink.jpg">
+                <img src="./images/mesa.jpg">
+                <img src="./images/lampada.jpg">
+            </div>
+
+        <section id="historia-restaurante">
+            <h3 style="font-style: italic;">Conheça nossa história</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, culpa voluptates, iure temporibus, qui exercitationem illo officiis dolore error assumenda hic quos distinctio est rem totam vel quis fugiat tempora.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, culpa voluptates, iure temporibus, qui exercitationem illo officiis dolore error assumenda hic quos distinctio est rem totam vel quis fugiat tempora.</p>
+        </section>
+    </section> <!-- Fim principal -->
+
+    <section> <!-- Início menu -->
+        <h2>Conheça nosso cardápio</h2>
+        <div id="menu-cardapio">
+            <article class="cardapio">
+                <a href="#">
+                    <img src="./images/coquetel.png">
+                    <h3>Bebidas</h3>
+                </a>
+            </article>
+            <article class="cardapio">
+                <a href="#">
+                    <img src="./images/entrada.png">
+                    <h3>Entradas</h3>
+                </a>
+            </article>
+            <article class="cardapio">
+                <a href="#">
+                    <img src="./images/principal.png">
+                    <h3>Pratos principais</h3>
+                </a>
+            </article>
+            <article class="cardapio">
+                <a href="#">
+                    <img src="./images/sobremesa2.png">
+                    <h3>Sobremesas</h3>
+                </a>
+            </article>
+        </section> <!-- Fim menu -->
+
+        <footer style="clear: both;"> <!-- Início rodapé -->
+			<p>
+				<a href="">Nossa história</a>
+				<a href="">Cardápio</a>
+				<a href="">Reservas</a>
+                <a href="">Horários</a>
+			</p>
+			<p>
+				2020 <a href="">Restaurant</a> - Todos os direitos reservados
+			</p>
+		</footer> <!-- Fim rodapé -->
+</div> <!-- Fim do container -->
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#carousel-imagens').slick({
+                autoplay:true,
+            })
+        })
+    </script>
+</body>
+</html>
